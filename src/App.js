@@ -6,13 +6,15 @@ import Contact from './components/Contact';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
+    <div className="app">
+      <header className="app--header">
         <Navbar />
+      </header>
+      <main className="app--main">
         <About />
         <Reviews />
         <Contact />
-      </header>
+      </main>
     </div>
   );
 }
