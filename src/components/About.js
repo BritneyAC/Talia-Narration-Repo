@@ -1,4 +1,4 @@
-export default function(){
+export default function About(){
   return(
     <section className="about">
       <img src="" alt="Talia" className="about--img"/>

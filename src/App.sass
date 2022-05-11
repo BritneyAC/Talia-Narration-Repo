@@ -21,7 +21,7 @@
   background: hsl(0, 0%, 16%)
 
 .nav--img
-  margin-right: 15px
+  margin-right: 2rem
 
 .nav--toggler
   position: absolute
@@ -33,6 +33,10 @@
   border: none
   width: 2rem
   aspect-ratio: 1
+  cursor: pointer
+
+.nav--toggler[aria-expanded="true"]
+    background: url(./images/close-icon.svg)
 
 .nav--menu
   display: flex
@@ -41,6 +45,27 @@
   padding-right: 10rem
   width: 50vw
   list-style: none
+
+.nav--menu > li 
+  cursor: pointer
+
+@media(max-width: 44rem)
+  .nav
+    justify-content: space-between
+
+  .nav--img
+    margin-right: 0.5rem
+
+  .nav--title
+    margin: 0 auto
+
+  .nav--menu
+    flex-direction: column
+    width: 30vw
+    margin: auto
+    align-items: center
+    height: 95vh
+
 
 .about
   display: flex
